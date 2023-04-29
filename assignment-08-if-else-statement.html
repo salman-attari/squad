@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  
+
+
+    <script>
+
+// Take a character input from user
+// let input = prompt("Enter a character:");
+
+// // Check if the input is a number
+// if (!isNaN(input)) {
+//   alert(`${input} is a number`);
+// }
+// // Check if the input is an uppercase letter
+// else if (input === input.toUpperCase()) {
+//   alert(`${input} is an uppercase letter`);
+// }
+// // Check if the input is a lowercase letter
+// else if (input === input.toLowerCase()) {
+//   alert(`${input} is a lowercase letter`);
+// }
+// // If the input is not a number or a letter, display an error message
+// else {
+//   alert(`Invalid input: ${input}`);
+// }
+
+
+// Take two integer inputs from user
+// let num1 = prompt("Enter the first number:");
+// let num2 = prompt("Enter the second number:");
+
+// // Convert the inputs to numbers
+// num1 = parseInt(num1);
+// num2 = parseInt(num2);
+
+// // Compare the numbers and display the result
+// if (num1 > num2) {
+//   alert(`${num1} is larger than ${num2}`);
+// } else if (num2 > num1) {
+//   alert(`${num2} is larger than ${num1}`);
+// } else {
+//   alert(`${num1} and ${num2} are equal`);
+// }
+
+
+// This if/else statement does not work. Try to fix it:
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// console.log(greeting);
+
+
+
+
+// ****************************************************************************
+
+// Take the time in 24-hour clock format as input from the user
+let time24 = prompt("Enter the time in 24-hour clock format (e.g. 1900):");
+
+// Convert the input to a number
+time24 = parseInt(time24);
+
+// Check if the input is valid
+if (time24 < 0 || time24 > 2359 || isNaN(time24)) {
+  console.log("Invalid input");
+} else {
+  // Convert the time to 12-hour clock format
+  let hour24 = Math.floor(time24 / 100);
+  let hour12 = hour24 % 12 || 12;
+  let minute = time24 % 100;
+  let meridiem = hour24 >= 12 ? "pm" : "am";
+
+  // Display the converted time
+  console.log(`The time is ${hour12}:${minute} ${meridiem}`);
+}
+
+// ****************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
