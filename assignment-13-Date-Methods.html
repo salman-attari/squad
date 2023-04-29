@@ -6,6 +6,142 @@
   
 <script>
 
+// Write a program that displays current date and time in your browser.
+// Get the current date and time
+
+// const now = new Date();
+
+// // Display the current date and time in the browser
+// document.write(`Current date and time: ${now}`);
+
+// // ***************************************************************************
+
+
+
+// Write a program that alerts the current month in words. For example December.
+
+// Create an array of month names
+
+
+// const monthNames = [
+//   "January", "February", "March", "April",
+//   "May", "June", "July", "August",
+//   "September", "October", "November", "December"
+// ];
+
+// // Get the current date
+// const now = new Date();
+
+// // Get the current month as a number (0-11)
+// const month = now.getMonth();
+
+// // Get the name of the current month
+// const currentMonth = monthNames[month];
+
+// // Alert the current month in words
+// alert(`The current month is ${currentMonth}`);
+
+
+// Write a program that alerts the first 3 letters of the current
+// day, for example if today is Sunday then alert will show
+// Sun.
+
+
+
+// // Get the current date
+// const now = new Date();
+
+// // Create an array of day names
+// const dayNames = [
+//   "Sun", "Mon", "Tue", "Wed",
+//   "Thu", "Fri", "Sat"
+// ];
+
+// // Get the current day as a number (0-6)
+// const day = now.getDay();
+
+// // Get the name of the current day
+// const currentDay = dayNames[day];
+
+// // Alert the first 3 letters of the current day
+// alert(`Today is ${currentDay}`);
+
+// **********************************************************
+
+
+// // Write a program that displays a message “It’s Fun day” if
+// // its Saturday or Sunday today.
+
+// // Get the current date
+// const now = new Date();
+
+// // Get the current day as a number (0-6)
+// const day = now.getDay();
+
+// // Check if it's Saturday (6) or Sunday (0)
+// if (day === 6 || day === 0) {
+//   alert("It's Fun day!");
+// } else {
+//   alert("Sorry, it's not Fun day today.");
+// }
+
+// ************************************************************************
+
+
+// Write a program that tests whether it's before noon and alert “Its AM” else “its PM”.
+
+
+// // Get the current time
+// const now = new Date();
+
+// // Get the current hour (0-23)
+// const hour = now.getHours();
+
+// // Check if it's before noon
+// if (hour < 12) {
+//   alert("It's AM");
+// } else {
+//   alert("It's PM");
+// }
+
+// ************************************************************************
+
+// Create a Date object for the current date and time.
+// Extract the hours, reset the date object an hour ahead and
+// finally display the date object in your browser.
+
+
+
+// Create a new date object for the current date and time
+const currentDate = new Date();
+
+// Get the current hour
+const currentHour = currentDate.getHours();
+
+// Reset the date object an hour ahead
+currentDate.setHours(currentHour + 1);
+
+// Display the date object in the browser
+alert(currentDate);
+
+
+
+// ***********************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 

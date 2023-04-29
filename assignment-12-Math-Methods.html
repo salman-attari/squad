@@ -3,8 +3,153 @@
 <head>
 </head>
 <body>
-  
 <script>
+
+// Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+
+// const num = parseInt(prompt("Enter a positive integer:"));
+
+// document.write(`Number: ${num}<br>`);
+// document.write(`Round off value: ${Math.round(num)}<br>`);
+// document.write(`Floor value: ${Math.floor(num)}<br>`);
+// document.write(`Ceil value: ${Math.ceil(num)}<br>`);
+
+
+// *********************************************************************************
+
+
+// Write a program that displays the absolute value of a number.
+// E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+// const num = parseInt(prompt("Enter a number:"));
+// const absValue = Math.abs(num);
+// document.write(`The absolute value of ${num} is ${absValue}`);
+
+// *****************************************************************************
+
+
+// Write a javascript program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+// const diceValue = Math.floor(Math.random() * 6) + 1;
+// document.write(`The value of the dice is: ${diceValue}`);
+
+// *****************************************************************************
+
+// Write a program that shows a random number between 1
+// and 100 in your browser.
+
+
+// const randomNumber = Math.floor(Math.random() * 100) + 1;
+// document.write(`The random number is: ${randomNumber}`);
+
+
+// *****************************************************************************
+
+// Write a program that asks the user about his weight. Parse
+// the user input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+
+// const weight = prompt("Enter your weight:");
+
+// // Regular expression to match the weight input
+// const regex = /^(\d+(\.\d+)?)(kgs|kilograms)?$/i;
+
+// if (regex.test(weight)) {
+//   const parsedWeight = parseFloat(weight);
+
+//   document.write(`Your weight is: ${parsedWeight} kgs`);
+// } else {
+//   alert("Please enter a valid weight");
+// }
+
+// ********************************************************************
+
+// Write a program that stores a random secret number from
+// 1 to 10 in a variable. Ask the user to input a number
+// between 1 and 10. If the user input equals the secret
+// number, congratulate the user.
+
+
+
+// Generate a random secret number from 1 to 10
+const secretNumber = Math.floor(Math.random() * 10) + 1;
+
+// Prompt the user to enter a number
+const userNumber = parseInt(prompt("Enter a number between 1 and 10:"));
+
+// Check if the user input matches the secret number
+if (userNumber === secretNumber) {
+  document.write("Congratulations! You guessed the secret number!");
+} else {
+  document.write(`Sorry, the secret number was ${secretNumber}. Try again!`);
+}
+
+
+// ***********************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>

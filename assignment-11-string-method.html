@@ -34,9 +34,170 @@
 // Write a program to find the last index of letter “l” in the
 // word “Hello World” and display the result in your browser.
 
-let word = "Hello World";
-let lastIndex = word.lastIndexOf("l");
-document.write("The last index of 'l' in 'Hello World' is " + lastIndex + ".");
+// let word = "Hello World";
+// let lastIndex = word.lastIndexOf("l");
+// document.write("The last index of 'l' in 'Hello World' is " + lastIndex + ".");
+
+
+
+
+// Write a program to find the character at 3rd index in the
+// word “Pakistani” and display the result in your browser.
+
+// const word = "Pakistani";
+// const charAtIndex3 = word.charAt(3);
+// document.write("The character at 3rd index in the word 'Pakistani' is: " + charAtIndex3);
+
+
+
+// Write a  program to replace the “Hyder” to “Islam” in the word “Hyderabad” and display the result in your browser.
+
+
+// const word = "Hyderabad";
+// const replacedWord = word.replace("Hyder", "Islam");
+// document.write("Original word: " + word + "<br>");
+// document.write("Replaced word: " + replacedWord);
+
+
+
+
+// Write a program that takes user input. Convert and show the input in capital letters.
+
+
+// const userInput = prompt("Enter some text:");
+// const upperCaseText = userInput.toUpperCase();
+
+// document.write("Original text: " + userInput + "<br>");
+// document.write("Uppercase text: " + upperCaseText);
+
+// Write a program that takes user input. Convert and
+// show the input in title case.
+
+// const userInput = prompt("Enter some text:");
+// const titleCaseText = toTitleCase(userInput);
+
+// document.write("Original text: " + userInput + "<br>");
+// document.write("Title case text: " + titleCaseText);
+
+// function toTitleCase(str) {
+//   return str.replace(/\w\S*/g, function(txt) {
+//     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+//   });
+// }
+
+
+// Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+
+// var num = 35.36;
+// var numToString = num.toString();
+// var numWithoutDot = numToString.replace(".", "");
+
+// document.write("Original number: " + num + "<br>");
+// document.write("Number as string: " + numToString + "<br>");
+// document.write("Number without dot: " + numWithoutDot);
+
+
+// Write a program to take user input and store username
+// in a variable. If the username contains any special symbol
+// among [@ . , !], prompt the user to enter a valid username.
+// For character codes of [@ .
+
+// const username = prompt("Enter username:");
+// const specialChars = ['@', '.', ',', '!'];
+
+// for (let i = 0; i < specialChars.length; i++) {
+//   if (username.includes(specialChars[i])) {
+//     alert("Username contains a special character. Please enter a valid username.");
+//     break;
+//   }
+// }
+
+
+
+
+// Write a program to take password as an input from
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document.
+
+
+// const password = prompt("Enter password:");
+// const passwordRegex = /^[a-zA-Z]\w{5,}$/;
+
+// if (!passwordRegex.test(password)) {
+//   alert("Password is not valid. Please enter a valid password.");
+// }
+
+
+
+// You have a string “The quick brown fox jumps over the
+// lazy dog”. Write a program to count number of
+// occurrences of word “the” in given string.
+
+const str = "The quick brown fox jumps over the lazy dog";
+const word = "the";
+
+// Use regular expression to match "the" regardless of case
+const regex = new RegExp(word, "gi");
+const count = (str.match(regex) || []).length;
+
+console.log(`The word "${word}" occurs ${count} times in the string.`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
