@@ -4,7 +4,43 @@
 </head>
 <body>
   
+<div>
+
+    <span id="datetime"></span>
+
+</div>
+
+
+
 <script>
+function displayDateTime() {
+  let currentDate = new Date(); // Create a new Date object
+  let dateOptions = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
+  let timeOptions = { hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Asia/Karachi' };
+  let dateString = currentDate.toLocaleDateString('en-US', dateOptions);
+  let timeString = currentDate.toLocaleTimeString('en-US', timeOptions);
+  let timezoneString = 'PKT';
+  let gmtOffset = -1 * currentDate.getTimezoneOffset() / 60;
+  let gmtString = gmtOffset > 0 ? `+${gmtOffset}` : gmtOffset;
+  let formattedString = `${dateString} ${timeString} GMT ${gmtString}00 (${timezoneString})`;
+  document.write(formattedString); // Display the formatted date and time in the browser
+}
+
+// Call the function to display the formatted date and time
+displayDateTime();
+
+
+// *****************************************************************************
+
+
+    function greetUser() {
+        let firstName = prompt("Please enter your first name:");
+        let lastName = prompt("Please enter your last name:");
+        let fullName = `${firstName} ${lastName}`;
+        alert(`Hello, ${fullName}! Welcome to our website.`);
+      }
+
+      greetUser(); // Call the function
 
 
 </script>
