@@ -13,35 +13,229 @@
 
 
 <script>
-function displayDateTime() {
-  let currentDate = new Date(); // Create a new Date object
-  let dateOptions = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
-  let timeOptions = { hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Asia/Karachi' };
-  let dateString = currentDate.toLocaleDateString('en-US', dateOptions);
-  let timeString = currentDate.toLocaleTimeString('en-US', timeOptions);
-  let timezoneString = 'PKT';
-  let gmtOffset = -1 * currentDate.getTimezoneOffset() / 60;
-  let gmtString = gmtOffset > 0 ? `+${gmtOffset}` : gmtOffset;
-  let formattedString = `${dateString} ${timeString} GMT ${gmtString}00 (${timezoneString})`;
-  document.write(formattedString); // Display the formatted date and time in the browser
+// function displayDateTime() {
+//   let currentDate = new Date(); // Create a new Date object
+//   let dateOptions = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
+//   let timeOptions = { hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Asia/Karachi' };
+//   let dateString = currentDate.toLocaleDateString('en-US', dateOptions);
+//   let timeString = currentDate.toLocaleTimeString('en-US', timeOptions);
+//   let timezoneString = 'PKT';
+//   let gmtOffset = -1 * currentDate.getTimezoneOffset() / 60;
+//   let gmtString = gmtOffset > 0 ? `+${gmtOffset}` : gmtOffset;
+//   let formattedString = `${dateString} ${timeString} GMT ${gmtString}00 (${timezoneString})`;
+//   document.write(formattedString); // Display the formatted date and time in the browser
+// }
+
+// // Call the function to display the formatted date and time
+// displayDateTime();
+
+
+// // *****************************************************************************
+
+
+//     function greetUser() {
+//         let firstName = prompt("Please enter your first name:");
+//         let lastName = prompt("Please enter your last name:");
+//         let fullName = `${firstName} ${lastName}`;
+//         alert(`Hello, ${fullName}! Welcome to our website.`);
+//       }
+
+//       greetUser(); // Call the function
+
+
+//  Write a function that adds two numbers (input by user) and returns the sum of two numbers.
+
+// function addNumbers() {
+//   let num1 = prompt("Enter the first number:");
+//   let num2 = prompt("Enter the second number:");
+
+//   // convert strings to numbers and add them
+//   let sum = Number(num1) + Number(num2);
+
+//   return sum;
+// }
+// let result = addNumbers();
+// document.write(result)
+// ***************************************************************************
+
+// function calculate(num1, num2, operator) {
+//   let result;
+  
+//   switch(operator) {
+//     case '+':
+//       result = num1 + num2;
+//       break;
+//     case '-':
+//       result = num1 - num2;
+//       break;
+//     case '*':
+//       result = num1 * num2;
+//       break;
+//     case '/':
+//       result = num1 / num2;
+//       break;
+//     default:
+//       result = "Invalid operator";
+//   }
+
+//   document.write("Result: " + result);
+//   return result;
+// }
+
+// let num1 = prompt("Enter the first number:");
+// let num2 = prompt("Enter the second number:");
+// let operator = prompt("Enter the operator (+, -, *, /):");
+// let result = calculate(Number(num1), Number(num2), operator);
+
+// ***************************************************************
+// Write a function that squares its argument. "SQUARE ROOT"
+
+// let num = prompt("Enter a number:");
+// let squareRootNum = squareRoot(num);
+// document.write(`The square root of ${num} is ${squareRootNum}`);
+// function squareRoot(num) {
+//   return Math.sqrt(num);
+// }
+
+
+
+// ****************************************************************************
+
+// Write a function that computes factorial of a number.
+
+// function factorial(num) {
+//   if (num === 0 || num === 1) {
+//     return 1;
+//   } else {
+//     return num * factorial(num - 1);
+//   }
+// }
+// let num = 4;
+// let factorialNum = factorial(num);
+// console.log(factorialNum); // Output: 120
+
+
+// ****************************************************************************
+
+
+// Write a function that take start and end number as inputs & display counting in your browser.
+
+// function countNumbers() {
+//   // Prompt the user for the start and end numbers
+//   const start = parseInt(prompt("Enter the start number:"));
+//   const end = parseInt(prompt("Enter the end number:"));
+
+//   // Create an empty string to hold the output
+//   let output = "";
+
+//   // Loop from the start number to the end number and add each number to the output string
+//   for (let i = start; i <= end; i++) {
+//     output += i + " ";
+//   }
+
+//   // Display the output in the browser
+//   document.write(output);
+// }
+
+// // Call the function to start the counting process
+// countNumbers();
+
+
+// **********************************************************************
+
+// function isPalindrome() {
+//   const str = prompt("Enter a string:");
+
+//   const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+//   for (let i = 0; i < cleanStr.length / 2; i++) {
+//     if (cleanStr[i] !== cleanStr[cleanStr.length - 1 - i]) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// const result = isPalindrome();
+// console.log(result);
+
+
+//**********************************************************************
+
+// Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+// window.onload = function() {
+//   function capitalizeFirstLetter() {
+//     let str = prompt("Enter a string:");
+
+//     if (str === null || str === "") {
+//       alert("Please enter a valid string.");
+//       return;
+//     }
+
+//     let words = str.toLowerCase().split(" ");
+
+//     for (let i = 0; i < words.length; i++) {
+//       words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+//     }
+
+//     let capitalizedStr = words.join(" ");
+
+//     document.write(capitalizedStr);
+//   }
+
+//   capitalizeFirstLetter();
+// };
+
+
+// ******************************************************************************
+
+
+// function findLongestWord(str) {
+//   let words = str.split(" ");
+  
+//   let longestWord = "";
+  
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i].length > longestWord.length) {
+//       longestWord = words[i];
+//     }
+//   }
+  
+//   return longestWord;
+// }
+
+// let str = "Web Developmentemtable Tutorial";
+// let longestWord = findLongestWord(str);
+// console.log(longestWord); 
+
+
+//********************************************************************************
+
+// Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.
+// Sample arguments : 'JSResourceS.com', 'o'
+
+
+function countOccurrences(str, letter) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === letter) {
+      count++;
+    }
+  }
+  return count;
 }
 
-// Call the function to display the formatted date and time
-displayDateTime();
-
-
-// *****************************************************************************
-
-
-    function greetUser() {
-        let firstName = prompt("Please enter your first name:");
-        let lastName = prompt("Please enter your last name:");
-        let fullName = `${firstName} ${lastName}`;
-        alert(`Hello, ${fullName}! Welcome to our website.`);
-      }
-
-      greetUser(); // Call the function
-
+// Example usage
+let str = "JSssResourcsseS.cossm";
+let letter = "s";
+let occurrences = countOccurrences(str, letter);
+console.log(occurrences);
 
 </script>
 
